@@ -44,7 +44,7 @@ app.get("/", (req, res) => {
 
 
 
-//app.use("/teacher/courses", courseRoutes)
+app.use("/teacher/courses", courseRoutes)
 app.use("/courses", courseRoutes);
 app.use("/users/clerk", requireAuth(), userClerkRoutes);
 app.use("/transactions", requireAuth(), transactionRoutes)
